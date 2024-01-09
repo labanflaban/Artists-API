@@ -81,7 +81,7 @@ class Program
             BaseAddress = new Uri("https://theaudiodb.p.rapidapi.com")
         };
 
-        client.DefaultRequestHeaders.Add("X-RapidAPI-Key", "1b3ec1e580mshff5a91450a7fcc0p14660djsn011a1c884c5d");
+        client.DefaultRequestHeaders.Add("X-RapidAPI-Key", "your API Key");
 
         var artists = await client.GetFromJsonAsync<Response>($"/search.php?s={artitsInput}");
         var artist = artists.Artists.FirstOrDefault();
