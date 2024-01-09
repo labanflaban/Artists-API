@@ -13,7 +13,7 @@ namespace LangateWrapUpDbApi.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=tcp:ghwrapupsqlserver.database.windows.net,1433;Initial Catalog=Artists;Persist Security Info=False;User ID=ghwrapupadmin;Password=Vatol0c0123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;");
+            optionsBuilder.UseSqlServer("YourConnectionString");
         }
     }
 }
